@@ -1,3 +1,4 @@
+
 # club-access-system 🏋️‍♂️📱🔐
 
 Sistema completo de control de acceso a un club mediante QR escaneado en un molinete. Proyecto de portfolio profesional que muestra integración entre software y hardware.
@@ -47,30 +48,52 @@ club-access-system/
 
 ## ⚙️ Instalación
 
-### Backend
+### ▶️ Opción recomendada: usando Docker
+
+Este proyecto incluye un archivo `docker-compose.yml` que configura:
+
+- El backend de Spring Boot
+- La base de datos PostgreSQL
+
+Para correrlo, desde la raíz del proyecto:
+
+```bash
+docker compose up --build
+```
+
+- Usá `--build` si hiciste cambios en el código o el Dockerfile.
+- Para la próxima vez, podés correr solo:
+
+```bash
+docker compose up
+```
+
+- Para detenerlo:
+
+```bash
+docker compose down
+```
+
+---
+
+### ⚙️ Opción alternativa: correr localmente con Maven
+
+Si preferís no usar Docker, podés correrlo desde tu máquina:
+
+#### Requisitos:
+
+- Java 17+
+- Maven
+- PostgreSQL corriendo localmente
+
+#### Comando:
 
 ```bash
 cd backend
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 
-> Asegúrate de configurar `application.properties` con tus credenciales de PostgreSQL.
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm start
-```
-
-### Lector QR (Molinete)
-
-```bash
-cd molinete
-pip install opencv-python pyzbar requests
-python lector_qr.py
-```
+⚠️ Asegurate de que la base de datos esté corriendo y que las credenciales en `application.properties` coincidan.
 
 ---
 
