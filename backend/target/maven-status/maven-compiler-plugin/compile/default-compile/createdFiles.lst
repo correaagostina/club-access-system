@@ -1,1 +1,14 @@
+com/clubaccess/api/dto/AccesoDto.class
+com/clubaccess/persistance/repository/AccesoRepository.class
+com/clubaccess/service/AccesoService.class
+com/clubaccess/api/dto/SocioDto.class
+com/clubaccess/api/controller/AccesoController.class
+com/clubaccess/persistance/entity/AccesoEntity.class
+com/clubaccess/persistance/entity/SocioEntity.class
 com/clubaccess/ClubAccessApplication.class
+com/clubaccess/config/SwaggerConfig.class
+com/clubaccess/api/controller/SocioController.class
+com/clubaccess/persistance/repository/SocioRepository.class
+com/clubaccess/service/SocioService.class
+com/clubaccess/model/Socio.class
+com/clubaccess/model/Acceso.class

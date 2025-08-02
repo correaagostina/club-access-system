@@ -1,1 +1,14 @@
-/Users/agostinacorrea/Downloads/club-access-system/backend/src/main/java/com/clubaccess/ClubAccessApplication.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/model/Socio.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/api/controller/AccesoController.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/service/AccesoService.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/api/controller/SocioController.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/api/dto/AccesoDto.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/service/SocioService.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/persistance/repository/AccesoRepository.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/persistance/entity/AccesoEntity.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/persistance/entity/SocioEntity.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/api/dto/SocioDto.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/ClubAccessApplication.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/config/SwaggerConfig.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/persistance/repository/SocioRepository.java
+/mnt/c/Users/agos_/OneDrive/Documentos/Agos/ProyectoClub/club-access-system/backend/src/main/java/com/clubaccess/model/Acceso.java

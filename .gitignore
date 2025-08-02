@@ -1,13 +1,24 @@
 # Maven build
 /backend/target/
 
-# IntelliJ / VSCode / IDEs
+# Spring Boot output
+backend/*.jar
+backend/*.original
+
+# IDEs
 *.iml
 .idea/
 .vscode/
+
+# Logs
+*.log
+logs/
 
 # Sistema
 .DS_Store
 
 # Archivos sensibles o locales
 .env
+
+# Docker volumes (si se usan)
+db/data/

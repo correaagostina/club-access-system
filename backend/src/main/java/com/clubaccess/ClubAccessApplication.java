@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ClubAccessApplication {
     public static void main(String[] args) {
         SpringApplication.run(ClubAccessApplication.class, args);
+        
     }
 }
