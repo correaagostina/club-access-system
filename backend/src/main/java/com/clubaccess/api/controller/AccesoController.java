@@ -5,6 +5,8 @@ import com.clubaccess.persistance.entity.AccesoEntity;
 import com.clubaccess.service.AccesoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.clubaccess.api.dto.AccesoResponseDto;
+import com.clubaccess.api.dto.AccesoRequestDto;
 
 import java.util.List;
 
@@ -31,5 +33,11 @@ public class AccesoController {
     @GetMapping("/socio/{id}")
     public ResponseEntity<List<AccesoEntity>> porSocio(@PathVariable Long id) {
         return ResponseEntity.ok(accesoService.accesosPorSocio(id));
+    }
+
+    @PostMapping("/validar")
+    public ResponseEntity<AccesoResponseDto> validarAcceso(@RequestBody AccesoRequestDto request) {
+        AccesoResponseDto response = accesoService.validarAcceso(request.getQr());
+        return ResponseEntity.ok(response);
     }
 }

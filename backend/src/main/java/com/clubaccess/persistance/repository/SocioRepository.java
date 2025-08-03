@@ -12,5 +12,6 @@ public interface SocioRepository extends JpaRepository<SocioEntity, Long>{
 
     List<SocioEntity> findByEmail(String email);
     Optional<SocioEntity> findById(Long id);
+    Optional<SocioEntity> findByQrCode(String qr);
     
 }
