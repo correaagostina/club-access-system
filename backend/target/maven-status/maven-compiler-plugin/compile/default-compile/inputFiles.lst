@@ -9,8 +9,10 @@ C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\persistance\entity\SocioEntity.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\config\SwaggerConfig.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\api\dto\SocioDto.java
+C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\api\dto\SocioResponseDto.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\persistance\repository\SocioRepository.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\ClubAccessApplication.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\persistance\repository\AccesoRepository.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\service\SocioService.java
+C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\service\SocioServiceInterface.java
 C:\Users\agos_\OneDrive\Documentos\Agos\ProyectoClub\club-access-system\backend\src\main\java\com\clubaccess\api\controller\AccesoController.java

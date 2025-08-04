@@ -4,7 +4,14 @@ public class SocioDto {
     private String nombre;
     private String email;
     private boolean estado;
+    private String dni;
 
+    public String getDni() {
+        return dni;
+    }
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
     public String getNombre() {
         return nombre;
     }

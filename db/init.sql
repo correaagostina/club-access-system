@@ -15,6 +15,22 @@ CREATE TABLE accesos (
     validado BOOLEAN
 );
 
+CREATE TABLE IF NOT EXISTS planes (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio NUMERIC(10, 2) NOT NULL,
+    duracion_dias INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS socios_planes (
+    socio_id INTEGER REFERENCES socios(id),
+    plan_id INTEGER REFERENCES planes(id),
+    fecha_inicio DATE,
+    fecha_fin DATE,
+    PRIMARY KEY (socio_id, plan_id)
+);
+
 
 INSERT INTO socios (id, nombre, email, estado, fecha_alta, fecha_baja, qr_code)
 VALUES (1, 'Norma Fisher', 'ysullivan@yahoo.com', FALSE, '2024-02-02', '2024-11-06', '37ebdcd9-e87a-4613-a443-df789558867f');

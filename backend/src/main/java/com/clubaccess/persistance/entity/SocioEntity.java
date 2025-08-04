@@ -22,11 +22,16 @@ public class SocioEntity {
 
     @Column(unique = true)
     private String email;
-
+    @Column(name = "estado", nullable = false)
+    // Estado del socio: activo o inactivo
     private boolean estado = true;
-
+    @ManyToOne
+    @JoinColumn(name = "acceso_id")
+    private AccesoEntity acceso;    
+    // Fecha de alta del socio
     @Column(name = "fecha_alta")
-    private LocalDate fechaAlta;
+    private LocalDate fechaAlta = LocalDate.now();  
+    // Fecha de baja del socio, puede ser null si el socio está activo          
 
     @Column(name = "fecha_baja")
     private LocalDate fechaBaja;

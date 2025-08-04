@@ -5,6 +5,8 @@ import com.clubaccess.persistance.entity.SocioEntity;
 import com.clubaccess.service.SocioService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.clubaccess.api.dto.SocioResponseDto;
+import java.util.Optional;
 
 import java.util.List;
 
@@ -19,25 +21,29 @@ public class SocioController {
     }
 
     @PostMapping
-    public ResponseEntity<SocioEntity> crear(@RequestBody SocioDto dto) {
-        return ResponseEntity.ok(socioService.crearSocio(dto));
+    public ResponseEntity<SocioResponseDto> create(@RequestBody SocioDto dto) {
+        return ResponseEntity.ok(socioService.createSocio(dto));
     }
 
     @GetMapping
-    public ResponseEntity<List<SocioEntity>> listar() {
-        return ResponseEntity.ok(socioService.listarSocios());
+    public ResponseEntity<List<SocioResponseDto>> list() {
+        return ResponseEntity.ok(socioService.listSocios());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<SocioEntity> obtener(@PathVariable Long id) {
-        return socioService.obtenerPorId(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
+    public ResponseEntity<SocioResponseDto> get(@PathVariable Long id) {
+        return ResponseEntity.ok(socioService.getSocio(id));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
-        socioService.eliminarSocio(id);
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        socioService.deleteSocio(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<SocioResponseDto> update(@PathVariable Long id, @RequestBody SocioDto socioDto) {
+        return ResponseEntity.ok(socioService.updateSocio(id, socioDto));
+    }
+
 }
